@@ -342,7 +342,10 @@ class InteractiveBook {
      */
     async loadContent() {
         try {
-            const response = await fetch('./content.json');
+            /*
+            const response = await fetch('./content.json');https://arr-glitch.github.io/LearningJourney/
+            */
+             const response = await fetch('https://arr-glitch.github.io/LearningJourney/content.json')
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
