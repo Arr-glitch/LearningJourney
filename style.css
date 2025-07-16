@@ -502,6 +502,62 @@ body::before {
     transition: var(--transition);
 }
 
+/* Checkbox-specific styling */
+.checkbox-note {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-style: italic;
+    background: linear-gradient(135deg, #e6f3ff, #f0f8ff);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #667eea;
+}
+
+.checkbox-options {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.checkbox-option {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border: 2px solid var(--border-light);
+    border-radius: var(--border-radius);
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.checkbox-option:hover {
+    background: linear-gradient(135deg, #edf2f7, #e2e8f0);
+    border-color: #667eea;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.checkbox-option.selected {
+    background: linear-gradient(135deg, #e6f3ff, #cce7ff);
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.checkbox-indicator {
+    font-size: 1.2rem;
+    min-width: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.checkbox-option.selected .checkbox-indicator {
+    transform: scale(1.1);
+}
+
 .option:hover {
     background: linear-gradient(135deg, #edf2f7, #e2e8f0);
     border-color: #667eea;

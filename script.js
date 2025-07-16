@@ -342,10 +342,7 @@ class InteractiveBook {
      */
     async loadContent() {
         try {
-            /*
-            const response = await fetch('./content.json');https://arr-glitch.github.io/LearningJourney/
-            */
-             const response = await fetch('https://arr-glitch.github.io/LearningJourney/content.json')
+            const response = await fetch('./content.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -509,6 +506,31 @@ class InteractiveBook {
                 `;
                 break;
 
+            case 'checkbox':
+                const selectedAnswers = Array.isArray(userAnswer) ? userAnswer : [];
+                questionHtml = `
+                    <div class="question-container" role="group" aria-labelledby="question_${questionId}">
+                        <div class="question" id="question_${questionId}">${questionIndex + 1}. ${question.question}</div>
+                        <div class="checkbox-note">📝 Select all correct answers:</div>
+                        <div class="options checkbox-options" role="group" aria-labelledby="question_${questionId}">
+                            ${question.options.map((option, i) =>
+                                `<div class="option checkbox-option ${selectedAnswers.includes(i) && !isQuestionChecked ? 'selected' : ''}"
+                                      data-option-index="${i}"
+                                      onclick="book.toggleCheckboxOption('${questionId}', ${i})"
+                                      role="checkbox"
+                                      aria-checked="${selectedAnswers.includes(i) ? 'true' : 'false'}"
+                                      tabindex="0"
+                                      ${isQuestionChecked ? 'style="pointer-events: none;"' : ''}>
+                                    <span class="checkbox-indicator">${selectedAnswers.includes(i) ? '☑️' : '☐'}</span>
+                                    ${String.fromCharCode(65 + i)}. ${option}
+                                </div>`
+                            ).join('')}
+                        </div>
+                        <div class="feedback" id="feedback_${questionId}" role="status" aria-live="polite"></div>
+                    </div>
+                `;
+                break;
+
             case 'fill-in-blank':
                 questionHtml = `
                     <div class="question-container input-question">
@@ -620,6 +642,23 @@ class InteractiveBook {
                 } else {
                     isCorrect = (Array.isArray(q.correct) && q.correct.includes(userAnswer)) || 
                                (!Array.isArray(q.correct) && userAnswer === q.correct);
+                    this.userAnswers[questionId] = { answer: userAnswer, isCorrect: isCorrect };
+                    newlyAnsweredCount++;
+                }
+
+            } else if (q.type === 'checkbox') {
+                const container = feedbackElement.closest('.question-container');
+                const selectedOptions = container.querySelectorAll('.option.selected');
+                userAnswer = Array.from(selectedOptions).map(option => parseInt(option.dataset.optionIndex));
+
+                if (userAnswer.length === 0) {
+                    feedbackElement.innerHTML = '<div class="feedback incorrect">❌ Please select at least one answer.</div>';
+                    currentQuestionAttempted = false;
+                } else {
+                    // For checkbox questions, check if selected answers match correct answers exactly
+                    const correctAnswers = Array.isArray(q.correct) ? q.correct.sort() : [q.correct];
+                    const selectedAnswers = userAnswer.sort();
+                    isCorrect = JSON.stringify(correctAnswers) === JSON.stringify(selectedAnswers);
                     this.userAnswers[questionId] = { answer: userAnswer, isCorrect: isCorrect };
                     newlyAnsweredCount++;
                 }
@@ -761,6 +800,40 @@ class InteractiveBook {
         options[optionIndex].setAttribute('aria-checked', 'true');
 
         this.userAnswers[questionId] = { answer: optionIndex, isCorrect: undefined };
+        this.updateActivity();
+    }
+
+    /**
+     * Toggle checkbox option for multiple-answer questions
+     */
+    toggleCheckboxOption(questionId, optionIndex) {
+        const container = document.querySelector(`#feedback_${questionId}`).closest('.question-container');
+        const option = container.querySelector(`[data-option-index="${optionIndex}"]`);
+        const checkboxIndicator = option.querySelector('.checkbox-indicator');
+        
+        // Get current selected answers or initialize empty array
+        let selectedAnswers = [];
+        if (this.userAnswers[questionId] && Array.isArray(this.userAnswers[questionId].answer)) {
+            selectedAnswers = [...this.userAnswers[questionId].answer];
+        }
+        
+        // Toggle the option
+        if (selectedAnswers.includes(optionIndex)) {
+            // Remove from selected
+            selectedAnswers = selectedAnswers.filter(index => index !== optionIndex);
+            option.classList.remove('selected');
+            option.setAttribute('aria-checked', 'false');
+            checkboxIndicator.textContent = '☐';
+        } else {
+            // Add to selected
+            selectedAnswers.push(optionIndex);
+            option.classList.add('selected');
+            option.setAttribute('aria-checked', 'true');
+            checkboxIndicator.textContent = '☑️';
+        }
+        
+        // Update user answers
+        this.userAnswers[questionId] = { answer: selectedAnswers, isCorrect: undefined };
         this.updateActivity();
     }
 
