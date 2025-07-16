@@ -1,0 +1,307 @@
+{
+  "chapters": [
+    {
+      "title": "Email Gap Fill",
+      "content": {
+        "passage": "From: John\nTo: Mark\nDear Mark,\nI hope (0) ………… and your family are well. I am visiting London next week and I thought it would be nice (25) ………… meet. We haven’t seen each other (26) ………… a long time! I am staying in London (27) ………… Tuesday to Sunday evening. (28) ………… you like to meet me somewhere for a snack or (29) ………… meal? I am busy most days with meetings, but I’ll be free (30) ………… the evenings and at the weekend. It would be great to see you again.\nBest wishes,\nJohn",
+        "explanation": "This section tests vocabulary and grammar in an email context.",
+        "examples": []
+      },
+      "questions": [
+        {
+          "type": "drag-and-drop",
+          "question": "Complete the email with one word for each gap.",
+          "gaps": {
+            "0": "you",
+            "25": "to",
+            "26": "for",
+            "27": "from",
+            "28": "Would",
+            "29": "a",
+            "30": "in"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Florence Nightingale Reading Comprehension",
+      "content": {
+        "passage": "Florence Nightingale was born in 1820. Her parents gave her an excellent education, but two hundred years ago the daughters of rich parents didn’t have careers. Their families expected them to (19) ………… married and stay at home. But Florence wanted to be a nurse and (20) ………… sick people. In 1854 she travelled to Turkey. At that time, Britain and some other countries were fighting a war against Russia. Florence worked very (21) ………… to improve the care of injured soldiers in the hospital. She became (22) ………… all over the world for her work there.\nFlorence started a school for nurses in 1864 and, for the first (23) …………., being a nurse became a real job. She also understood that it was very important to (24) ………… things clean in hospitals. Florence died in 1910 at the age of ninety.",
+        "explanation": "This section tests reading comprehension and vocabulary related to a historical figure.",
+        "examples": []
+      },
+      "questions": [
+        {
+          "type": "choose",
+          "question": "For each question, choose the correct answer.",
+          "questions": [
+            {
+              "number": 19,
+              "options": [
+                "A get",
+                "B become",
+                "C have"
+              ],
+              "correct": "A get"
+            },
+            {
+              "number": 20,
+              "options": [
+                "A look at",
+                "B look for",
+                "C look after"
+              ],
+              "correct": "C look after"
+            },
+            {
+              "number": 21,
+              "options": [
+                "A certainly",
+                "B hard",
+                "C best"
+              ],
+              "correct": "B hard"
+            },
+            {
+              "number": 22,
+              "options": [
+                "A special",
+                "B favourite",
+                "C famous"
+              ],
+              "correct": "C famous"
+            },
+            {
+              "number": 23,
+              "options": [
+                "A time",
+                "B age",
+                "C year"
+              ],
+              "correct": "A time"
+            },
+            {
+              "number": 24,
+              "options": [
+                "A let",
+                "B be",
+                "C keep"
+              ],
+              "correct": "C keep"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Businessperson of the Year Reading Comprehension",
+      "content": {
+        "passage": "Henrietta Dawson, a businessperson from Portsmouth, is the new Businessperson of the Year. Henrietta heard she had won the prize at a dinner in London last night.\n‘I can’t believe I won the title!’ Henrietta said when she found out. ‘There are hundreds of good, hard-working businesspeople out there, so when people tell you that you’re the best it’s just fantastic.’\nHendrietta runs three companies that make food and drink to sell to hotels and restaurants in and around her hometown. ‘I couldn’t have done it without my parents and husband. They’ve given me a lot of help,’ Henrietta said.\nHendrietta’s mother was also a successful businessperson and taught her daughter that anything is possible if you work hard. Henrietta is also lucky because her husband, Pete, put his own career on hold to look after their two young children.\nHendrietta is the first woman to win the title. Last year’s winner, Tom Lawson, who runs a successful tourism company, was at the dinner too. ‘The competition is an important way to get people interested in starting their own businesses,’ he told the audience. ‘Of course, not everyone wants to do it, but you don’t need to come from a rich family to be a successful businessperson.’\nHendrietta could one day be a rich woman. But she isn’t one yet; the money she makes goes back into her businesses, not into her pocket.",
+        "explanation": "This section tests reading comprehension about a business profile.",
+        "examples": []
+      },
+      "questions": [
+        {
+          "type": "choose",
+          "question": "For each question, choose the correct answer.",
+          "questions": [
+            {
+              "number": 14,
+              "options": [
+                "A has food and drink companies in Portsmouth.",
+                "B sells hotels and restaurants in her hometown.",
+                "C has companies which sell food and drink in London."
+              ],
+              "correct": "A has food and drink companies in Portsmouth."
+            },
+            {
+              "number": 15,
+              "options": [
+                "A wasn’t surprised when she won the title.",
+                "B was told by many businesspeople that she was the best.",
+                "C didn’t know she would win the competition."
+              ],
+              "correct": "C didn’t know she would win the competition."
+            },
+            {
+              "number": 16,
+              "options": [
+                "A is a lucky man.",
+                "B has helped her become successful.",
+                "C also has a successful career."
+              ],
+              "correct": "B has helped her become successful."
+            },
+            {
+              "number": 17,
+              "options": [
+                "A because everyone is interested in starting a business.",
+                "B because it shows that business is not only for some people.",
+                "C because anyone can run a business."
+              ],
+              "correct": "B because it shows that business is not only for some people."
+            },
+            {
+              "number": 18,
+              "options": [
+                "A might be rich in the future.",
+                "B has become a rich woman.",
+                "C uses her money to start new businesses."
+              ],
+              "correct": "A might be rich in the future."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Explorers Profiles Reading Comprehension",
+      "content": {
+        "passage": "Gerald\nWhen I was a boy, my parents worked in Africa for two years. We visited lots of exciting places there and I have loved travelling and exploring since then. I usually choose to travel alone because it is easier to meet people that way. I often stay with the new friends I make on my journeys, and finding out about new cultures is my favourite part of exploring.\nSimone\nMy favourite places are in the cold parts of the world. There are some areas, covered in snow and ice, where almost no one has ever been before. I usually go on foot because there are no roads. I plan my trips very carefully – I like to be well prepared and I take lots of special equipment with me. I sometimes go for days and weeks without seeing other people – I like the opportunity that gives me to think about my life and to make plans.\nFrank\nI do most of my exploring by boat. It can take me weeks to get somewhere I could drive to in a day, but it is all about the journey. I always take someone else because my boat needs two people and I don’t think I would like to go alone. There usually aren’t many people at all in the places that I explore, so I don’t often meet new people. My boat is quite small so I can get to places that other, bigger boats can’t get to. That makes travelling even more interesting.",
+        "explanation": "This section tests reading comprehension about different explorers' preferences and experiences.",
+        "examples": []
+      },
+      "questions": [
+        {
+          "type": "choose",
+          "question": "For each question, choose the correct answer (A for Gerald, B for Simone, C for Frank).",
+          "questions": [
+            {
+              "number": 7,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "B"
+            },
+            {
+              "number": 8,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "A"
+            },
+            {
+              "number": 9,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "B"
+            },
+            {
+              "number": 10,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "C"
+            },
+            {
+              "number": 11,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "B"
+            },
+            {
+              "number": 12,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "A"
+            },
+            {
+              "number": 13,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "correct": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Short Text Message Comprehension",
+      "content": {
+        "passage": "1\nHi Jane,\nI’ll be home late tonight. Can you cook? Or I can get something on the way home. Fish and chips?\nMichael\n2\nHigh-speed internet offer:\nBuy for 12 months and pay half-price!\nOffer ends soon.\n3\nMark,\nSorry I missed you. I had to go out to my mother’s house. Can we do it tomorrow? Same time and place?\nHannah\n4\nSTAFF PARKING ONLY\nFor extra spaces and student parking, turn left\n←\n5\nHello,\nIs your bike still for sale? I’m interested in it if it doesn’t need any work and I can test ride it.\nRegards,\nBen\n6\nTo: Joseph\nFrom: Briony\nDear Joseph,\nI’m unhappy that you were late a second time this week. Please make an appointment with Jenny to speak to me.\nRegards,\nBriony",
+        "explanation": "This section tests the ability to understand short messages and their implied meanings.",
+        "examples": []
+      },
+      "questions": [
+        {
+          "type": "choose",
+          "question": "For each question, choose the correct answer.",
+          "questions": [
+            {
+              "number": 1,
+              "options": [
+                "A Michael wants Jane to cook fish and chips.",
+                "B Michael wants to eat fish and chips on the way home.",
+                "C Michael offers to buy fish and chips for dinner."
+              ],
+              "correct": "C Michael offers to buy fish and chips for dinner."
+            },
+            {
+              "number": 2,
+              "options": [
+                "A You get a special price on six months of internet.",
+                "B You get a better price if you buy internet for a year.",
+                "C You don’t have to decide quickly."
+              ],
+              "correct": "B You get a better price if you buy internet for a year."
+            },
+            {
+              "number": 3,
+              "options": [
+                "A Hannah wants to meet Mark at her mother’s house tomorrow.",
+                "B Hannah misses Mark and wants to go to his house.",
+                "C Mark went to Hannah’s house but she was not at home."
+              ],
+              "correct": "C Mark went to Hannah’s house but she was not at home."
+            },
+            {
+              "number": 4,
+              "options": [
+                "A This is the only place where staff can park.",
+                "B Extra space is only for students.",
+                "C Turn left if you are staff and the car park is full."
+              ],
+              "correct": "C Turn left if you are staff and the car park is full."
+            },
+            {
+              "number": 5,
+              "options": [
+                "A Ben wants to see if he likes the bike.",
+                "B Ben doesn’t need the bike for work.",
+                "C Ben can test the bike."
+              ],
+              "correct": "A Ben wants to see if he likes the bike."
+            },
+            {
+              "number": 6,
+              "options": [
+                "A Briony will be unhappy if Joseph is late for a second time this week.",
+                "B Briony wants Joseph to explain to her why he was late.",
+                "C Joseph must explain why he was late to Jenny."
+              ],
+              "correct": "B Briony wants Joseph to explain to her why he was late."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
